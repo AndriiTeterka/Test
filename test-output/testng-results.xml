@@ -2,20 +2,20 @@
 <testng-results ignored="0" total="1" passed="1" failed="0" skipped="0">
   <reporter-output>
   </reporter-output>
-  <suite started-at="2019-03-09T21:55:25 EET" name="Default suite" finished-at="2019-03-09T21:55:38 EET" duration-ms="13719">
+  <suite started-at="2019-03-09T22:29:38 EET" name="Default suite" finished-at="2019-03-09T22:29:53 EET" duration-ms="14315">
     <groups>
     </groups>
-    <test started-at="2019-03-09T21:55:25 EET" name="Default test" finished-at="2019-03-09T21:55:38 EET" duration-ms="13719">
+    <test started-at="2019-03-09T22:29:38 EET" name="Default test" finished-at="2019-03-09T22:29:53 EET" duration-ms="14315">
       <class name="test.LoginTest">
-        <test-method is-config="true" signature="beforeClass()[pri:0, instance:test.LoginTest@5ff60a8c]" started-at="2019-03-09T21:55:25 EET" name="beforeClass" finished-at="2019-03-09T21:55:29 EET" duration-ms="4748" status="PASS">
+        <test-method is-config="true" signature="beforeClass()[pri:0, instance:test.LoginTest@889d9e8]" started-at="2019-03-09T22:29:38 EET" name="beforeClass" finished-at="2019-03-09T22:29:43 EET" duration-ms="4710" status="PASS">
           <reporter-output>
           </reporter-output>
         </test-method> <!-- beforeClass -->
-        <test-method signature="emptyValuesLogIn()[pri:0, instance:test.LoginTest@5ff60a8c]" started-at="2019-03-09T21:55:29 EET" name="emptyValuesLogIn" finished-at="2019-03-09T21:55:37 EET" duration-ms="7660" status="PASS">
+        <test-method signature="LogIn()[pri:0, instance:test.LoginTest@889d9e8]" started-at="2019-03-09T22:29:43 EET" name="LogIn" finished-at="2019-03-09T22:29:52 EET" duration-ms="8483" status="PASS">
           <reporter-output>
           </reporter-output>
-        </test-method> <!-- emptyValuesLogIn -->
-        <test-method is-config="true" signature="afterClass()[pri:0, instance:test.LoginTest@5ff60a8c]" started-at="2019-03-09T21:55:37 EET" name="afterClass" finished-at="2019-03-09T21:55:38 EET" duration-ms="897" status="PASS">
+        </test-method> <!-- LogIn -->
+        <test-method is-config="true" signature="afterClass()[pri:0, instance:test.LoginTest@889d9e8]" started-at="2019-03-09T22:29:52 EET" name="afterClass" finished-at="2019-03-09T22:29:53 EET" duration-ms="772" status="PASS">
           <reporter-output>
           </reporter-output>
         </test-method> <!-- afterClass -->

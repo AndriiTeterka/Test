@@ -8,7 +8,6 @@ import org.testng.annotations.Test;
 import pages.HomePage;
 
 public class LoginTest extends BaseTest {
-	String errorMsg = driver.findElement(By.id("errf")).getText();
 
 	// @DataProvider(name = "LogPass")
 //	public Object[][] testData() {
@@ -23,6 +22,7 @@ public class LoginTest extends BaseTest {
 		homePage.gotoHomePage()
 				.gotoSignInPage()
 				.Login("Adasd", "12312d");
+		String errorMsg = driver.findElement(By.id("errf")).getText();
 		assertEquals(errorMsg, "Oops, that's not a match.");
 	}
 }

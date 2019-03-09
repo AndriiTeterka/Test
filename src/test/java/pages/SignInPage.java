@@ -19,7 +19,7 @@ public class SignInPage extends BasePage {
 		writeText(loginField, username);
 		click(passwordField);
 		writeText(passwordField, password);
-		click(loginField);
+		click(signInButton);
 		return this;
 	}
 }
