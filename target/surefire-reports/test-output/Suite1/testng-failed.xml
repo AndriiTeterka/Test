@@ -1,14 +1,14 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <!DOCTYPE suite SYSTEM "http://testng.org/testng-1.0.dtd">
-<suite guice-stage="DEVELOPMENT" verbose="0" name="Failed suite [Suite1]">
+<suite name="Failed suite [Suite1]" guice-stage="DEVELOPMENT" verbose="0">
   <parameter name="browserName" value="chrome"/>
-  <test thread-count="5" verbose="0" name="Test11(failed)">
+  <test thread-count="5" name="Test11(failed)" verbose="0">
     <parameter name="number" value="2"/>
     <classes>
       <class name="org.maven.test.LoginTest">
         <methods>
+          <include name="emptyValuesLogIn"/>
           <include name="afterClass"/>
-          <include name="EmptyValuesLogIn"/>
           <include name="beforeClass"/>
         </methods>
       </class> <!-- org.maven.test.LoginTest -->

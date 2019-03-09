@@ -1,7 +1,6 @@
 package org.maven.pages;
 
 import org.openqa.selenium.By;
-import org.openqa.selenium.JavascriptExecutor;
 import org.openqa.selenium.WebDriver;
 
 public class HomePage extends BasePage {
@@ -41,9 +40,7 @@ public class HomePage extends BasePage {
 
 	// func test
 	public HomePage loginTry(String username, String password) {
-		waitVisibility(usernameLocator);
-		JavascriptExecutor js = (JavascriptExecutor) driver;
-		js.executeScript("arguments[0].click();", usernameLocator);
+		click(usernameLocator);
 		typeUsername(username);
 		click(passwordLocator);
 		typePassword(password);
