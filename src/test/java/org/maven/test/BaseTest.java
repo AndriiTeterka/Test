@@ -20,7 +20,7 @@ public abstract class BaseTest {
 				"C:\\Program Files (x86)\\Google\\Chrome\\Application\\chromedriver.exe");
 		driver = new ChromeDriver();
 		if (driver != null) {
-			// driver.manage().window().maximize();
+			driver.manage().window().maximize();
 			driver.manage().timeouts().implicitlyWait(10, TimeUnit.SECONDS);
 		} else {
 			throw new RuntimeException("ERROR: Chromedriver not Found");

@@ -2,32 +2,37 @@
 <testng-results ignored="0" total="1" passed="0" failed="1" skipped="0">
   <reporter-output>
   </reporter-output>
-  <suite started-at="2019-03-09T20:14:27 EET" name="Default suite" finished-at="2019-03-09T20:14:36 EET" duration-ms="9494">
+  <suite started-at="2019-03-09T21:00:24 EET" name="Default suite" finished-at="2019-03-09T21:00:47 EET" duration-ms="23559">
     <groups>
     </groups>
-    <test started-at="2019-03-09T20:14:27 EET" name="Default test" finished-at="2019-03-09T20:14:36 EET" duration-ms="9494">
+    <test started-at="2019-03-09T21:00:24 EET" name="Default test" finished-at="2019-03-09T21:00:47 EET" duration-ms="23559">
       <class name="org.maven.test.LoginTest">
-        <test-method is-config="true" signature="beforeClass()[pri:0, instance:org.maven.test.LoginTest@3c904f1e]" started-at="2019-03-09T20:14:27 EET" name="beforeClass" finished-at="2019-03-09T20:14:30 EET" duration-ms="3669" status="PASS">
+        <test-method is-config="true" signature="beforeClass()[pri:0, instance:org.maven.test.LoginTest@6df3e44c]" started-at="2019-03-09T21:00:24 EET" name="beforeClass" finished-at="2019-03-09T21:00:27 EET" duration-ms="3537" status="PASS">
           <reporter-output>
           </reporter-output>
         </test-method> <!-- beforeClass -->
-        <test-method signature="emptyValuesLogIn()[pri:0, instance:org.maven.test.LoginTest@3c904f1e]" started-at="2019-03-09T20:14:30 EET" name="emptyValuesLogIn" finished-at="2019-03-09T20:14:35 EET" duration-ms="4629" status="FAIL">
-          <exception class="java.lang.IllegalArgumentException">
+        <test-method signature="emptyValuesLogIn()[pri:0, instance:org.maven.test.LoginTest@6df3e44c]" started-at="2019-03-09T21:00:27 EET" name="emptyValuesLogIn" finished-at="2019-03-09T21:00:46 EET" duration-ms="18918" status="FAIL">
+          <exception class="org.openqa.selenium.TimeoutException">
             <message>
-              <![CDATA[Argument is of an illegal type: org.openqa.selenium.By$ByCssSelector]]>
+              <![CDATA[Expected condition failed: waiting for visibility of all elements located by By.id: LoginInputUsername (tried for 15 second(s) with 500 milliseconds interval)
+Build info: version: '3.141.59', revision: 'e82be7d358', time: '2018-11-14T08:17:03'
+System info: host: 'HOME-PC', ip: '192.168.0.101', os.name: 'Windows 8.1', os.arch: 'amd64', os.version: '6.3', java.version: '11.0.1'
+Driver info: org.openqa.selenium.chrome.ChromeDriver
+Capabilities {acceptInsecureCerts: false, acceptSslCerts: false, applicationCacheEnabled: false, browserConnectionEnabled: false, browserName: chrome, chrome: {chromedriverVersion: 73.0.3683.68 (47787ec04b6e3..., userDataDir: C:\Users\ANDRII~1\AppData\L...}, cssSelectorsEnabled: true, databaseEnabled: false, goog:chromeOptions: {debuggerAddress: localhost:54135}, handlesAlerts: true, hasTouchScreen: false, javascriptEnabled: true, locationContextEnabled: true, mobileEmulationEnabled: false, nativeEvents: true, networkConnectionEnabled: false, pageLoadStrategy: normal, platform: XP, platformName: XP, proxy: Proxy(), rotatable: false, setWindowRect: true, strictFileInteractability: false, takesHeapSnapshot: true, takesScreenshot: true, timeouts: {implicit: 0, pageLoad: 300000, script: 30000}, unexpectedAlertBehaviour: ignore, unhandledPromptBehavior: ignore, version: 72.0.3626.121, webStorageEnabled: true}
+Session ID: 987a22cdeec71b99209c028040642401]]>
             </message>
             <full-stacktrace>
-              <![CDATA[java.lang.IllegalArgumentException: Argument is of an illegal type: org.openqa.selenium.By$ByCssSelector
-at org.openqa.selenium.remote.internal.WebElementToJsonConverter.apply(WebElementToJsonConverter.java:83)
-at java.base/java.util.stream.ReferencePipeline$3$1.accept(ReferencePipeline.java:195)
-at java.base/java.util.Spliterators$ArraySpliterator.forEachRemaining(Spliterators.java:948)
-at java.base/java.util.stream.AbstractPipeline.copyInto(AbstractPipeline.java:484)
-at java.base/java.util.stream.AbstractPipeline.wrapAndCopyInto(AbstractPipeline.java:474)
-at java.base/java.util.stream.ReduceOps$ReduceOp.evaluateSequential(ReduceOps.java:913)
-at java.base/java.util.stream.AbstractPipeline.evaluate(AbstractPipeline.java:234)
-at java.base/java.util.stream.ReferencePipeline.collect(ReferencePipeline.java:578)
-at org.openqa.selenium.remote.RemoteWebDriver.executeScript(RemoteWebDriver.java:484)
-at org.maven.pages.HomePage.loginTry(HomePage.java:46)
+              <![CDATA[org.openqa.selenium.TimeoutException: Expected condition failed: waiting for visibility of all elements located by By.id: LoginInputUsername (tried for 15 second(s) with 500 milliseconds interval)
+Build info: version: '3.141.59', revision: 'e82be7d358', time: '2018-11-14T08:17:03'
+System info: host: 'HOME-PC', ip: '192.168.0.101', os.name: 'Windows 8.1', os.arch: 'amd64', os.version: '6.3', java.version: '11.0.1'
+Driver info: org.openqa.selenium.chrome.ChromeDriver
+Capabilities {acceptInsecureCerts: false, acceptSslCerts: false, applicationCacheEnabled: false, browserConnectionEnabled: false, browserName: chrome, chrome: {chromedriverVersion: 73.0.3683.68 (47787ec04b6e3..., userDataDir: C:\Users\ANDRII~1\AppData\L...}, cssSelectorsEnabled: true, databaseEnabled: false, goog:chromeOptions: {debuggerAddress: localhost:54135}, handlesAlerts: true, hasTouchScreen: false, javascriptEnabled: true, locationContextEnabled: true, mobileEmulationEnabled: false, nativeEvents: true, networkConnectionEnabled: false, pageLoadStrategy: normal, platform: XP, platformName: XP, proxy: Proxy(), rotatable: false, setWindowRect: true, strictFileInteractability: false, takesHeapSnapshot: true, takesScreenshot: true, timeouts: {implicit: 0, pageLoad: 300000, script: 30000}, unexpectedAlertBehaviour: ignore, unhandledPromptBehavior: ignore, version: 72.0.3626.121, webStorageEnabled: true}
+Session ID: 987a22cdeec71b99209c028040642401
+at org.openqa.selenium.support.ui.WebDriverWait.timeoutException(WebDriverWait.java:95)
+at org.openqa.selenium.support.ui.FluentWait.until(FluentWait.java:272)
+at org.maven.pages.BasePage.waitVisibility(BasePage.java:21)
+at org.maven.pages.BasePage.click(BasePage.java:26)
+at org.maven.pages.HomePage.loginTry(HomePage.java:43)
 at org.maven.test.LoginTest.emptyValuesLogIn(LoginTest.java:23)
 at java.base/jdk.internal.reflect.NativeMethodAccessorImpl.invoke0(Native Method)
 at java.base/jdk.internal.reflect.NativeMethodAccessorImpl.invoke(NativeMethodAccessorImpl.java:62)
@@ -58,11 +63,11 @@ at org.testng.remote.RemoteTestNG.initAndRun(RemoteTestNG.java:251)
 at org.testng.remote.RemoteTestNG.main(RemoteTestNG.java:77)
 ]]>
             </full-stacktrace>
-          </exception> <!-- java.lang.IllegalArgumentException -->
+          </exception> <!-- org.openqa.selenium.TimeoutException -->
           <reporter-output>
           </reporter-output>
         </test-method> <!-- emptyValuesLogIn -->
-        <test-method is-config="true" signature="afterClass()[pri:0, instance:org.maven.test.LoginTest@3c904f1e]" started-at="2019-03-09T20:14:35 EET" name="afterClass" finished-at="2019-03-09T20:14:36 EET" duration-ms="854" status="PASS">
+        <test-method is-config="true" signature="afterClass()[pri:0, instance:org.maven.test.LoginTest@6df3e44c]" started-at="2019-03-09T21:00:47 EET" name="afterClass" finished-at="2019-03-09T21:00:47 EET" duration-ms="799" status="PASS">
           <reporter-output>
           </reporter-output>
         </test-method> <!-- afterClass -->

@@ -6,9 +6,9 @@ import org.openqa.selenium.WebDriver;
 public class HomePage extends BasePage {
 
 	// WebElements
-	By usernameLocator = By.cssSelector(("input[value='Username']"));
-	By passwordLocator = By.xpath(("//*[@value='Password']"));
-	By loginbuttonLocator = By.xpath(("//*[@class='login_btn']"));
+	By usernameLocator = By.id("LoginInputUsername");
+	By passwordLocator = By.id("LoginInputPassword");
+	By loginbuttonLocator = By.id("login-button");
 	String baseURL = "https://jetbull.stage.everymatrix.com/";
 
 	public HomePage(WebDriver driver) {
