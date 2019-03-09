@@ -1,4 +1,5 @@
-C:\Users\Andrii Teterka\eclipse-workspace\Test\src\test\java\org\maven\test\BaseTest.java
-C:\Users\Andrii Teterka\eclipse-workspace\Test\src\test\java\org\maven\pages\BasePage.java
-C:\Users\Andrii Teterka\eclipse-workspace\Test\src\test\java\org\maven\pages\HomePage.java
-C:\Users\Andrii Teterka\eclipse-workspace\Test\src\test\java\org\maven\test\LoginTest.java
+C:\Users\Andrii Teterka\eclipse-workspace\Test\src\test\java\pages\SignInPage.java
+C:\Users\Andrii Teterka\eclipse-workspace\Test\src\test\java\test\LoginTest.java
+C:\Users\Andrii Teterka\eclipse-workspace\Test\src\test\java\pages\BasePage.java
+C:\Users\Andrii Teterka\eclipse-workspace\Test\src\test\java\test\BaseTest.java
+C:\Users\Andrii Teterka\eclipse-workspace\Test\src\test\java\pages\HomePage.java
