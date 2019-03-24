@@ -1,5 +1,7 @@
 package test;
 
+import utilities.Log;
+
 import java.util.concurrent.TimeUnit;
 
 import org.openqa.selenium.WebDriver;
@@ -9,13 +11,14 @@ import org.testng.annotations.BeforeClass;
 
 public abstract class BaseTest {
 
-	protected WebDriver driver;
+	public WebDriver driver;
 
 	/**
 	 * Create instance of WebDriver, open browser and go to opencart
 	 */
 	@BeforeClass
 	public void beforeClass() {
+		Log.startLog("Testing started");
 		System.setProperty("webdriver.chrome.driver",
 				"C:\\Program Files (x86)\\Google\\Chrome\\Application\\chromedriver.exe");
 		driver = new ChromeDriver();
@@ -33,6 +36,7 @@ public abstract class BaseTest {
 	 */
 	@AfterClass(alwaysRun = true)
 	public void afterClass() {
+		Log.endLog("Testing ended");
 		if (driver != null) {
 			driver.quit();
 		}
