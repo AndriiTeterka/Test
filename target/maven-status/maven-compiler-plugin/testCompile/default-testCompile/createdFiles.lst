@@ -1,0 +1,7 @@
+pages\BasePage.class
+test\BaseTest.class
+test\LoginTest.class
+pages\HomePage.class
+pages\SignInPage.class
+utilities\DataProviderClass.class
+utilities\Log.class
