@@ -15,12 +15,13 @@ import utilities.DataProviderClass;
 public class LoginTest extends BaseTest {
 	@BeforeClass
 	public void setup() {
+		Log.startLog("Test is starting");
 		initilize();
 	}
 
 	@Test(dataProvider = "Test", dataProviderClass = DataProviderClass.class)
-	@Description("Login form testing")
 	public void LogIn(String username, String password) {
+		Log.info("Opening home page");
 		HomePage homePage = new HomePage(driver);
 		// Methods
 		homePage.gotoHomePage()
@@ -33,6 +34,7 @@ public class LoginTest extends BaseTest {
 
 	@AfterClass
 	public void tearDown() {
+		Log.endLog("Test is ending");
 		quit();
 	}
 }
